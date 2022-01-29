@@ -1,0 +1,30 @@
+{
+  "name": "marnprtfolio",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "client": "npm start --prefix portfolio-frontend",
+    "server": "nodemon backend/server",
+    "dev": " concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.1.8",
+    "morgan": "^1.10.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
