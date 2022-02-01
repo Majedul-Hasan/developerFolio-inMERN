@@ -57,6 +57,7 @@
   },
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "proxi": "http://localhost:4050"
   
 }

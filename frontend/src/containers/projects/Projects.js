@@ -2,7 +2,7 @@ import React, {Suspense, useContext, lazy} from 'react';
 import Button from "../../components/button/Button";
 
 import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
+
 
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 
@@ -28,7 +28,7 @@ const Projects = () => {
     const {githubData} = githubDataList
 
 
-    console.log(githubData);
+    //console.log(githubData);
 
   const {isDark} = useContext(StyleContext);
 
